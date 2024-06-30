@@ -4,7 +4,7 @@ import CartItem from './CartItem';
 import  Box  from '@mui/material/Box';
 const Cart: React.FC = () => {
   const { state, clearCart } = useCart();
-  const totalPrice = state.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const totalPrice = state.items.reduce((sum, item) => sum + item.price , 0);
 
   return (
     <div>
